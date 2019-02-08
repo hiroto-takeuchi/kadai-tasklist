@@ -22,7 +22,7 @@ class TasksController < ApplicationController
     end 
     
     def new 
-        @task = Task.new(task_params)
+        @task = Task.new
     end 
     
     def update
