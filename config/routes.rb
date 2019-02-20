@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
  
+  
+
   get 'sessions/new'
 
   get 'sessions/create'
@@ -16,4 +18,5 @@ Rails.application.routes.draw do
   
   resources :users, only: [:index, :show, :create, :new]
   resources :tasks
+  resources :task_lists, only: [:create, :destroy]
 end
