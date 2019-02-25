@@ -1,4 +1,7 @@
 <h1>id: <%= @task.id %>のタスクリスト詳細ページ</h1>
+
+<p><%= @task.content %></p>
+
     <table class="table table-boardered">
         <tr>
             <th>id</th>
@@ -14,6 +17,6 @@
         </tr>
     </table>
 
-
+<%= link_to 'タスク一覧に戻る', root_path, class: 'btn btn-primary' %>
 <%= link_to 'このタスクを編集する', edit_task_path(@task),class: 'btn btn-default' %>
 <%= link_to 'このタスクを削除する', @task, method: :delete, data: { confirm:'本当に削除してもよろしいですか？' }, class: 'btn btn-danger' %>
