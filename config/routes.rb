@@ -1,14 +1,5 @@
 Rails.application.routes.draw do
-  get 'tasklists/create'
-
-  get 'tasklists/destroy'
-
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
+  
   root to: 'toppages#index'
   
   get 'login', to: 'sessions#new'
