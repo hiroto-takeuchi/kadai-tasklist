@@ -35,9 +35,6 @@ class UsersController < ApplicationController
   end 
   
   def correct_user
-        # @task = current_user.tasks.find_by(id: [])
-        # unless @task
-
     @user = User.find(params[:id])
     unless @user == current_user
       redirect_to root_url and return
