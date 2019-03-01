@@ -40,7 +40,6 @@ class TasksController < ApplicationController
     end 
     
     def edit 
-        
     end 
     
     def destroy
@@ -53,7 +52,7 @@ class TasksController < ApplicationController
     private
     
     def set_task
-        @task = Task.find_by(params[:id])
+        @task = Task.find(params[:id])
     end 
     
     def task_params
